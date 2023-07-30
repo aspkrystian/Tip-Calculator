@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">SPLI<br />TTER</div>
+      <div class="calculator">
+        <div class="leftSection">
+          <div class="bill">
+            <div class="billText"><p>Bill</p></div>
+            <div class="billInput">
+              <form>
+                <input class="billIn" type="number" required placeholder="$" />
+              </form>
+            </div>
+          </div>
+          <div class="num">
+            <div class="numText"><p>Number of People</p></div>
+            <div class="numInput">
+              <form>
+                <input class="numIn" type="number" required placeholder="--" />
+              </form>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tipText"><p>Select Tip%</p></div>
+            <div class="tipSelector">
+              <div class="topRow">
+                <div id="button" class="tip5"><p>5%</p></div>
+                <div id="button" class="tip10"><p>10%</p></div>
+                <div id="button" class="tip15"><p>15%</p></div>
+              </div>
+              <div class="botRow">
+                <div id="button" class="tip25"><p>25%</p></div>
+                <div id="button" class="tip50"><p>50%</p></div>
+                <div
+                  id="button"
+                  class="custom"
+                  style="background-color: hsl(180, 81%, 96%); color: gray"
+                >
+                  <input class="customIn" type="number" placeholder="custom" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <div class="tipPerson">
+            <div class="leftSide">
+              <p>Tip Amount</p>
+              <p style="color: hsl(184, 14%, 56%)">/ person</p>
+            </div>
+            <div class="rightSide"><span id="tipAmount">$0.00</span></div>
+          </div>
+          <div class="total">
+            <div class="leftSide">
+              <p>Total</p>
+              <p style="color: hsl(184, 14%, 56%)">/ perosn</p>
+            </div>
+            <div class="rightSide"><span id="totalAmount">$0.00</span></div>
+          </div>
+          <!-- <div class="confirmButton"><button>confirm</button></div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

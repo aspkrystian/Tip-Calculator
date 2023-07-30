@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Space Mono", monospace;
+}
+body{
+  background-color: hsl(185, 41%, 84%);
+}
+.main{
+  width: 60%;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title{
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  font-size: 26px;
+  color:hsl(172, 67%, 45%);
+}
+.calculator{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  background-color: white;
+  padding: 50px 0;
+  border-radius: 20px;
+  align-items: stretch;
+}
+.leftSection, .rightSection{
+  background-color: white;
+}
+.numInput input, .billInput input{
+  background-color: hsl(180, 81%, 96%);
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#button {
+  padding: 15px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+}
+.topRow,
+.botRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.rightSection {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+#tipAmount, #totalAmount{
+  color: hsl(172, 67%, 45%);
+  font-size: 30px;
+ }
+ .leftSection,
+.rightSection {
+  width: 35%;
+}
+ .custom input{
+  background-color: hsl(180, 81%, 96%);
+  display: flex;
+  text-align: center;
+  width: 80px;
+}
+.tipPerson,
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bill, .num{
+  padding-bottom: 30px;
+}
+.total{
+  padding-top: 20px;
+}
+.botRow, .topRow {
+  margin-top: 10px;
+}
+.botRow{
+  margin-bottom: 30px;
+}
+.leftSection{
+  color: hsl(184, 14%, 56%);
+}
+@media  screen and (max-width: 900px) {
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: "Space Mono", monospace;
+}
+body{
+  background-color: hsl(185, 41%, 84%);
+}
+.main{
+  width: 90%;
+  margin: 15% auto;
+}
+.title{
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  font-size: 26px;
+  color:hsl(172, 67%, 45%);
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.leftSection, .rightSection{
+  background-color: white;
+}
+.numInput input, .billInput input{
+  background-color: hsl(180, 81%, 96%);
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#button {
+  padding: 15px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+}
+.topRow,
+.botRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.rightSection {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  padding: 30px; 
+  max-width: 90%;
+  border-radius: 20px;
+}
+#tipAmount, #totalAmount{
+  color: hsl(172, 67%, 45%);
+  font-size: 30px;
+ }
+ .custom input{
+  background-color: hsl(180, 81%, 96%);
+  display: flex;
+  text-align: center;
+  width: 80px;
+}
+.tipPerson,
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bill, .num{
+  padding-bottom: 30px;
+}
+.total{
+  padding-top: 20px;
+}
+.botRow, .topRow {
+  margin-top: 10px;
+}
+.botRow{
+  margin-bottom: 30px;
+}
+.leftSection{
+  color: hsl(184, 14%, 56%);
+}
+.leftSection,
+.rightSection {
+  width: 100%;
+}
+}
